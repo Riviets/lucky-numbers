@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.result {
+  margin: 0 auto;
+  max-width: 500px;
+  border: 2px solid #cccccc;
+  border-radius: 30px;
+  min-height: 550px;
+  position: fixed; /* Використовуємо fixed для модального вигляду */
+  top: 50%; /* Центруємо вертикально */
+  left: 50%; /* Центруємо горизонтально */
+  transform: translate(-50%, -50%); /* Вирівнюємо по центру */
+  background-color: rgba(0, 0, 0, 0.7);
+  max-height: 600px;
+}
+.result__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+.result__title {
+  font-size: 48px;
+  color: #0062ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.result__text {
+  font-size: 24px;
+  color: #424242;
+}
+.result__img {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+.generate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Центрування по вертикалі */
+  height: 100vh; /* Висота на весь екран */
+}
+
+.btn {
+  padding: 10px 75px;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: lightgreen;
+}/*# sourceMappingURL=styles.css.map */

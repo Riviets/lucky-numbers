@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.result {
+  margin: 0 auto;
+  max-width: 500px;
+  border: 2px solid #cccccc;
+  border-radius: 30px;
+  min-height: 550px;
+  position: fixed; /* Використовуємо fixed для модального вигляду */
+  top: 50%; /* Центруємо вертикально */
+  left: 50%; /* Центруємо горизонтально */
+  transform: translate(-50%, -50%); /* Вирівнюємо по центру */
+  background-color: rgba(0, 0, 0, 0.7);
+  max-height: 600px;
+}
+.result__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+.result__title {
+  font-size: 48px;
+  color: #0062ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.result__text {
+  font-size: 24px;
+  color: #424242;
+}
+.result__img {
+  max-width: 300px;
+  border-radius: 5px;
+}/*# sourceMappingURL=result.css.map */
