@@ -98,8 +98,122 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Центрування по вертикалі */
-  height: 100vh; /* Висота на весь екран */
+  gap: 60px;
+  justify-content: center;
+  min-height: 108vh;
+  height: 100%;
+  margin-top: -60px;
+  background: linear-gradient(45deg, rgb(22, 45, 255), rgb(140, 72, 251));
+}
+.generate__number {
+  font-size: 48px;
+  letter-spacing: 20px;
+  border: 5px solid black;
+  padding: 30px;
+  background-color: rgb(249, 249, 154);
+  border-radius: 15px;
+}
+.generate__buttons {
+  display: flex;
+  gap: 50px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  min-width: 300px;
+  animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+.enter {
+  background: white;
+  margin: 0;
+}
+
+.enter__title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.enter__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.enter__inputs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.enter__input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.enter__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.enter__error {
+  color: #dc3545;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.enter__btn {
+  margin-top: 10px;
 }
 
 .btn {

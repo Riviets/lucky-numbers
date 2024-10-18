@@ -1,9 +1,8 @@
-// result.js
 import React from 'react';
 
 function Result(props) {
     return (
-        <div className='result' style={{ backgroundColor: props.bgcolor }}>
+        <div className='result result-animate' style={{ backgroundColor: props.bgcolor }}>
             <div className="result__inner">
                 <h2 className='result__title'>{props.title}</h2>
                 <p className='result__numbers'>{props.numbers.join(' ')}</p>
